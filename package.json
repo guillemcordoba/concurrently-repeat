@@ -1,0 +1,28 @@
+{
+  "name": "concurrently-repeat",
+  "version": "0.0.1",
+  "description": "Wrapper around concurrently to repeat command N times",
+  "main": "index.mjs",
+  "bin": {
+    "concurrently-repeat": "index.mjs"
+  },
+  "scripts": {
+    "test": "node index.mjs -k -n -r \"echo 2 && exit 1\" 5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillemcordoba/concurrently-repeat.git"
+  },
+  "keywords": [],
+  "author": "guillem.cordoba@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillemcordoba/concurrently-repeat/issues"
+  },
+  "homepage": "https://github.com/guillemcordoba/concurrently-repeat#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "yargs": "^16.2.0"
+  },
+  "type": "module"
+}
